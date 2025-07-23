@@ -5,4 +5,4 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 df = conn.read()
 
 for row in df.itertuples():
-    st.write(f"{row.title} has a :{row.start_date}:")
+    st.write(f"{row.name} has a :{row.pet}:")
